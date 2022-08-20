@@ -1,0 +1,95 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link
+      href="https://unpkg.com/boxicons@2.1.2/css/boxicons.min.css"
+      rel="stylesheet"
+    />
+    <title>Contacto</title>
+  </head>
+
+  <body>
+    <header>
+      <h1>Esto es HTML 4</h1>
+
+      <nav>
+        <ul>
+          <li><a href="index.html">Home</a></li>
+          <li><a href="nosotros.html">Nosotros</a></li>
+          <li><a href="contacto.html">Contacto</a></li>
+        </ul>
+      </nav>
+      
+    </header>
+
+    <form action="" method="post">
+      <p>
+        <label for="apellido">Apellido</label>
+        <input
+          type="text"
+          name="apellido"
+          id="apellido"
+          placeholder="Ingrese su apellido"
+        />
+      </p>
+      <p>
+        <label for="nombre">Nombre</label>
+        <input
+          type="text"
+          name="nombre"
+          id="nombre"
+          placeholder="Ingrese su nombre"
+        />
+      </p>
+
+      <p>
+        <label for="edad">Edad</label>
+        <input
+          type="number"
+          name="edad"
+          id="edad"
+          value="18"
+          min="18"
+          max="100"
+        />
+      </p>
+      <p>
+        <label>
+          <input type="checkbox" name="edad15" value="15" /> 15 Años
+        </label>
+      </p>
+      <p>
+        <label>
+          <input type="checkbox" name="edad20" value="20" checked /> 20 Años
+        </label>
+      </p>
+      <p>
+        <label>
+          <input type="checkbox" name="edad30" value="30" /> 30 Años
+        </label>
+      </p>
+      <h3>radio</h3>
+      <p>
+        <label> <input type="radio" name="edad" value="20" /> 20 Años </label>
+      </p>
+      <p>
+        <label> <input type="radio" name="edad" value="25" /> 25 Años </label>
+      </p>
+      <p>
+        <label> <input type="radio" name="edad" value="30" /> 30 Años </label>
+      </p>
+
+      <p>
+        <input type="submit" name="enviar" id="enviar" />
+      </p>
+    </form>
+
+    <footer>
+      <i class="bx bxl-whatsapp"></i>
+      <i class="bx bxl-facebook-circle"></i>
+    </footer>
+  </body>
+</html>
