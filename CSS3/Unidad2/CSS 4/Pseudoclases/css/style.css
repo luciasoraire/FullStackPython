@@ -1,0 +1,25 @@
+p:first-child{
+    color: blue;
+}
+
+li:nth-child(even){
+    background:lightskyblue;
+}
+
+
+li:nth-child(){
+    background:lightgreen;
+
+}
+a:link {
+    color:red;
+}
+a:hover {
+    background-color: yellow;
+}
+a:visited {
+    color:blue;
+}
+a:active {
+    background-color: green;color: white;
+}

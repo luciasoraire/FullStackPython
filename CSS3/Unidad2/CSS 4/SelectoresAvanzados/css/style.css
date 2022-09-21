@@ -1,0 +1,12 @@
+p,a,.caja{
+    color: blueviolet;
+}
+
+/*
+div p{
+  color: blue;
+}
+*/
+div > p{
+   background-color: darkolivegreen;
+}

@@ -1,0 +1,33 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+.circulo{
+    margin-top: 40px;
+    margin-left: 25px;
+    width: 80px;
+    height: 80px;
+    background-color: blue;
+    border-radius: 50%;
+    animation-name: mover;
+    animation-duration: 3s;
+    animation-delay: 1s;
+    animation-timing-function: cubic-bezier(0.075, 0.82, 0.165, 1);
+    animation-iteration-count:2;
+    animation-fill-mode: forwards;
+}
+@keyframes mover{
+    0%{
+        background-color: red;
+        transform: translateX(100px);
+    }
+    50%{
+        background-color: green;
+        transform: translateY(100px);
+    }
+    100%{
+        background-color: yellow;
+        
+    }
+}

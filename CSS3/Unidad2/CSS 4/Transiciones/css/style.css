@@ -1,0 +1,12 @@
+.caja{
+    border: 2px solid black;
+    background-color: aqua;
+    width: 20%;
+    height: 100px;
+    transition:background-color 3s 2s cubic-bezier(0, 0.37, 0.74, 0.38) ;
+    
+}
+.caja:hover{
+  background-color: blue;
+  border-radius: 25px;
+}

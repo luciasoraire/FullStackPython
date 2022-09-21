@@ -1,0 +1,27 @@
+div{
+    width:100px;
+    height:100px;
+    float:left;
+    margin:5px;
+    background-color: yellow;
+    border:1px solid black;
+}
+
+#uno{
+  /*  transform: translateX(150px);
+    transform: translateY(-50px);*/
+    transform: translate(100px,150px);
+}
+#dos{
+    transform: scale(.5,1);
+   
+}
+#tres{
+    transform:rotate(-45deg);
+}
+#cuatro{
+    transform:skewX(65deg);
+}
+#cinco{
+    transform:skewY(-50px);
+}

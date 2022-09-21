@@ -1,0 +1,42 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing:border-box;
+    
+}
+
+#primero{
+    border: 2px solid black;
+    width: 25%;
+    margin: 5px;
+    float: left;
+    
+}
+#segundo{
+    border: 2px dotted blue;
+    width: 25%;
+    margin: 5px;
+   float: left;
+   
+}
+#tercero{
+    border: 2px double red;
+    width: 55%;
+    margin: 5px;
+    float: left;
+   
+    
+   
+}
+
+
+footer{
+    clear: both;
+    height: 56px;
+    background-color: cornflowerblue;
+    text-align: center;
+    position: fixed;
+    bottom: 0;
+    width: 100%;
+    
+}
