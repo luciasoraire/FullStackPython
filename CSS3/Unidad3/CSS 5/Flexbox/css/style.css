@@ -1,0 +1,53 @@
+html{
+	font-size:62.5%;          /*Hacemos que 1rem sea equivalente a 10px*/
+}
+
+#contenedor{	
+  background: #777777;
+  width: 100%;
+  height: 50rem;
+  display: flex;
+  flex-flow: row wrap;      /*flex-flow: <flex-direction> <flex-wrap>*/
+  justify-content: center;  /*Alinea a todos los items en el eje principal: row: horizontal - column: vertical*/
+  row-gap: 1rem;            /*Espacio entre filas*/                         
+  align-content: flex-end;  /*Este estilo sólo funciona si el flex-wrap es wrap, actúan en contenedores multilínea*/
+  column-gap: 1rem;         /*Espacio entre columnas*/
+  align-items: flex-start;  /*Si el flex-wrap es wrap, esta línea no funciona.*/   
+}
+
+.item {  
+  font-size:3rem;
+  /*width: 50%;*/   /*No definir si queremos usar flex-grow // flex-shrink - Definir para probar el row-gap*/
+  flex-basis: 5rem; /*Define un tamaño base en todos los items, no usar si usamos width*/
+  height: 5rem;
+}
+
+.item-1{
+	background: red;
+  align-self: flex-start;
+  flex-grow: 4;
+}
+
+.item-2{
+	background: yellow;	
+  order: -10;
+}
+
+.item-3{
+	background: green;
+  flex-grow: 3;
+}
+
+.item-4{
+	background: blue;
+  flex-grow: 1;
+  order: -1;
+}
+
+.item-5{
+	background: cyan;
+  flex-grow: 0;       /*Aplicado por defecto*/ 
+}
+
+
+	
