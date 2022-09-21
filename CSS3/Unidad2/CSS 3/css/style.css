@@ -1,0 +1,95 @@
+h1{
+    color: blue;
+    text-align: center;
+   
+}
+.centrado{
+    border: 5px solid green;
+   /* max-width: 400px;*/
+    width: 50%;
+    margin: auto;
+
+}
+
+.relativo{
+   /* position:relative;*/
+    border: 5px solid blue;
+    width: 50%;
+    left: 200px;
+    top:200px;
+  
+}
+
+.fixed{
+    position: fixed;
+    left:10px;
+    top: 10px;
+    border: 5px solid red;
+}
+
+.absoluta{
+    position: absolute;
+    bottom:0;
+    left:0;
+    border: 5px solid blue;
+}
+.padre{
+    position:relative;
+    width: 300px;
+    height: 100px;
+    border: 5px solid green;
+   
+}
+
+.sticky{
+    
+    position:sticky;
+    top: 0;
+    right: 0;
+    border: 5px solid blue;
+    border-style: dotted;
+}
+/*Z.index*/
+
+.container{
+    width: 1000px;
+    height: 1000px;
+    margin: auto;
+  }
+  h1{
+    font-size: 30px;
+    text-align:center;
+  }
+  .caja1{
+    width:  100px;               
+    height: 100px;              
+    background-color: green; 
+    position: relative;
+    z-index: 3;
+    left: 200px;
+    top:200px;
+   
+  }
+  .caja2{
+    width:  100px;               
+    height: 100px;              
+    background-color:blue;
+    position: relative;
+    z-index: 1;
+    left: 250px;
+    top:100px;
+  }
+  .caja3{
+    width:  100px;               
+    height: 100px;              
+    background-color:red; 
+    position: relative;
+    z-index: 2;
+    left: 300px;
+    top:50px;
+  }
+  .z{
+    color: white;
+    font-size: 1.2em;
+    padding:25px ;
+  }
