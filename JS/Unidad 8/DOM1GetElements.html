@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>DOM-01-Métodos tradicionales</title>
+    <link rel="stylesheet" href="estilos.css">
+
+<body>
+    <h3>DOM-01-Métodos tradicionales</h3>
+    <h4>- getElementsByClassName</h4>
+    <hr>
+
+    <div class="ejemplo">Primer elemento div con clase = "ejemplo".</div>
+    <div class="ejemplo">Segundo elemento div con clase = "ejemplo".</div>
+    <div class="ejemplo">Tercer elemento div con clase = "ejemplo".</div>
+    <div class="ejemplo">Cuarto elemento div con clase = "ejemplo".</div>
+
+    <p>Haga clic en los botones para cambiar el texto del primer elemento div con clase = "ejemplo" (índice 0), o para
+        cambiar todos los elementos div con clase = "ejemplo".</p>
+
+    <!-- Botones que disparan los cambios-->
+    <button onclick="cambiarTexto()"       class="boton">Cambiar un párrafo</button>
+    <button onclick="cambiarTextoAtodos()" class="boton">Cambiar todos</button>
+
+    <p><strong>Nota:</strong> El método <b>getElementsByClassName()</b> no es soportado en Internet Explorer 8 y anteriores.
+    </p>
+
+    <!-- --------------------------- -->
+    <script>
+        function cambiarTexto() {
+                     
+            let x = document.getElementsByClassName("ejemplo");
+            x[1].innerHTML = "Hola Codo a Codo!";
+        }
+
+        function cambiarTextoAtodos() {
+            let x = document.getElementsByClassName("ejemplo");
+            for (i = 0; i < x.length; i++) {
+                x[i].innerHTML = "Hola Codo a Codo! " + (i + 1);
+            }
+        }
+    </script>
+    <!-- --------------------------- -->
+
+</body>
+
+</html>

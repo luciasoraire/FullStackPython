@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Ejemplo DOM</title>
+  <link rel="stylesheet" href="estilos.css">
+  <script>
+    function modifyText() { // Función que modifica el contenido de #t2
+      var t2 = document.getElementById("t2");
+      t2.firstChild.nodeValue = "Tocado!";
+    }
+    function load() { // Función que establece el EventListener()
+      var el = document.getElementById("t2");
+      el.addEventListener("click", modifyText, false);
+    }
+    // Al cargar el documento, agregamos el EventListener()
+    //nombre del evento,funcion a ser ejecutada, booleano
+    document.addEventListener("DOMContentLoaded", load, false);
+    //load se dispara cuando el documento esta totalmente cargado
+  </script>
+</head>
+<body>
+    <p id="t2">Haz click aquí!</p>
+</body>
+</html>

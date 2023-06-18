@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>DOM-07-Insertar una imagen</title>
+    <link rel="stylesheet" href="estilos.css">
+</head>
+<body>
+    <h3>DOM-07-Insertar una imagen</h3>
+    <h4>- createElement<br>
+        - appendChild</h4>
+    <hr>
+    <p>Hacer clic en el botón para agregar una imagen:
+    <button onclick="agregarImagen()" class="boton">Agregar imágen</button></p>
+     
+    <script>
+        function agregarImagen(){
+        // img contiene el elemento creado. Es un objeto
+        const img = document.createElement("img");
+        
+        // Modifico los atributos de ese objeto
+        img.src = "https://1000marcas.net/wp-content/uploads/2020/11/JavaScript-logo.jpg";
+        img.alt = "Logo Javascript";
+        img.width = "200";
+        
+        // Agrego el objeto en el cuerpo del documento.
+        document.body.appendChild(img);
+    }
+    </script>
+     
+    
+</body>
+</html>

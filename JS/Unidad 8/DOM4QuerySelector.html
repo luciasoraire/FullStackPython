@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>DOM-04-Métodos modernos</title>
+    <link rel="stylesheet" href="estilos.css">
+
+<body>
+    <h3>DOM-04-Métodos modernos</h3>
+    <h4>- querySelectorAll</h4>
+    <hr>
+    
+    <h2 class="subtitulo">Subtitulo</h2>
+    <p class="parrafo">Lorem ipsum, dolor sit amet consectetur adipisicing elit. Quod, perspiciatis mollitia? Corporis
+        illum amet reprehenderit quisquam. </p>
+    <p class="parrafo">Lorem ipsum, dolor sit amet consectetur adipisicing elit. Quod, perspiciatis mollitia? Corporis
+        illum amet reprehenderit quisquam.</p>
+    <p class="parrafo">Lorem ipsum, dolor sit amet consectetur adipisicing elit. Quod, perspiciatis mollitia? Corporis
+        illum amet reprehenderit quisquam.</p>
+        <p class="parrafo">Lorem ipsum, dolor sit amet consectetur adipisicing elit. Quod, perspiciatis mollitia? Corporis
+            illum amet reprehenderit quisquam.</p>
+    <h2 class="subtitulo">Otro subtitulo</h2>
+    <p class="parrafo">Lorem ipsum, dolor sit amet consectetur adipisicing elit. Quod, perspiciatis mollitia? Corporis
+        illum amet reprehenderit quisquam. Fuga eaque incidunt ducimus distinctio ad totam modi quas ea. Consequatur
+        quos similique quaerat.</p>
+    <p class="parrafo">Lorem ipsum, dolor sit amet consectetur adipisicing elit. Quod, perspiciatis mollitia? Corporis
+        illum amet reprehenderit quisquam.</p>
+    <p class="parrafo">Lorem ipsum, dolor sit amet consectetur adipisicing elit. Quod, perspiciatis mollitia? Corporis
+        illum amet reprehenderit quisquam.</p>
+    <button class="boton" onclick="pintar()">Pintar</button>
+    <button class="boton" onclick="pintarAleatorio()">Pintar Aleatorio</button>
+
+    <script>
+        function pintar() {
+            var x, y, i;
+            //x contiene TODOS los elementos de la clase
+            x = document.querySelectorAll(".parrafo");
+
+            //Recorro x (array) y les cambio los colores
+            for (i = 0; i < x.length; i++) {
+                x[i].style.color = "rgb(200,200,100)";
+            }
+
+            //y contiene TODOS los elementos de la clase
+            y = document.querySelectorAll(".subtitulo");
+
+            //Recorro x (array) y les cambio los colores
+            for (i = 0; i < y.length; i++) {
+                y[i].style.backgroundColor = "rgb(150,150,0)";
+            }
+        }
+
+        function pintarAleatorio() {
+            var r, g, b, x, y, i;
+            r = Math.floor(Math.random() * 255);
+            g = Math.floor(Math.random() * 255);
+            b = Math.floor(Math.random() * 255);
+            x = document.querySelectorAll(".parrafo");
+            for (i = 0; i < x.length; i++) {
+                x[i].style.backgroundColor = "rgb(" + r + "," + g + "," + b + ")";
+            }
+            r = Math.floor(Math.random() * 255);
+            g = Math.floor(Math.random() * 255);
+            b = Math.floor(Math.random() * 255);
+            y = document.querySelectorAll(".subtitulo");
+            for (i = 0; i < y.length; i++) {
+                y[i].style.backgroundColor = "rgb(" + r + "," + g + "," + b + ")";
+            }
+        }
+        
+    </script>
+
+</body>
+
+</html>

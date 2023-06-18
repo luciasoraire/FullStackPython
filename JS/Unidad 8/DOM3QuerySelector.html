@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>DOM-03-Métodos modernos</title>
+    <link rel="stylesheet" href="estilos.css">
+
+<body>
+    <h3>DOM-03-Métodos modernos</h3>
+    <h4>- querySelector</h4>
+    <hr>
+    
+    <h2 class="ejemplo">Encabezado con clase "ejemplo"</h2>
+    <p  class="ejemplo">Párrafo con clase "ejemplo".</p>
+    <!-- manejador de eventos on  -->
+    <button class="boton" onclick="agregarFondo()">Agregar fondo</button>
+    
+    <script>
+        function agregarFondo() {
+            //querySelector devuelve SOLO EL PRIMER ELEMENTO de ese tipo.
+            document.querySelector(".ejemplo").style.backgroundColor = "lightblue";
+            document.querySelector(".boton").innerHTML = "Gracias! :)";
+        }
+    </script>
+    
+</body>
+
+</html>

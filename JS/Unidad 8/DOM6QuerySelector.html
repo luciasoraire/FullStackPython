@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>DOM-06-createElement</title>
+    <link rel="stylesheet" href="estilos.css">
+
+<body>
+    <h3>DOM-06-createElement</h3>
+    <h4>- createElement<br>
+        - appendChild</h4>
+    <hr>
+    <p>Hacer clic en el botón para agregar un botón</p>
+    <button onclick="agregarBoton()" class="boton">Agregar botón</button>
+
+    <p>Hacer clic en el botón para agregar un título</p>
+    <button onclick="agregarTitulo()" class="boton">Agregar título</button>
+
+    <p id="parrafo">Hacer clic en el botón para copiar este párrafo</p>
+    <button onclick="copiarParrafo()" class="boton">Copiar</button>
+
+
+
+    <script>
+        //.createElement
+        function agregarBoton() {
+            var btn = document.createElement("BUTTON");
+            btn.innerHTML = "Haz clic!";
+            document.body.appendChild(btn);
+        }
+
+        //.createElement y .createTextNode
+        function agregarTitulo() {
+            var tit = document.createElement("h1");
+            var titContenido = document.createTextNode("Soy un titulo");
+            tit.appendChild(titContenido);
+            document.body.appendChild(tit);
+        }
+
+        //.cloneNode
+        function copiarParrafo() {
+            var itm = document.getElementById("parrafo");
+            var cln = itm.cloneNode(true);
+            document.body.appendChild(cln);
+        }
+    </script>
+
+
+</body>
+
+</html>

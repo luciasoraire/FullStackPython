@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>DOM-05-createElement (CSS)</title>
+
+</head>
+
+<body>
+    <h3>DOM-5-createElement (CSS)</h3>
+    <h4>- createElement</h4>
+    <hr>
+
+    <script>
+        //Creo un elemento y estipulo su estilo CSS
+        const div = document.createElement("div");
+        div.id = "page";
+        div.className = "data";
+        div.innerHTML = "Texto con estilo, creado con JS!";
+        div.style.color = "red";
+        div.style.background = "lightblue";
+        div.style.border = "2px solid black";
+        div.style.padding = "5px";
+        div.style.borderRadius = "10px";
+        document.body.appendChild(div);
+        
+
+        //Creo otro elemento, pero uso una clase CSS existente
+        const div2 = document.createElement("div");
+        div2.className = "nuevaClase";
+        div2.innerHTML = "Texto con otro estilo (mediante CSS)";
+        document.body.appendChild(div2);
+    </script>
+
+</body>
+
+</html>

@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>DOM-09-Eventos</title>
+    <link rel="stylesheet" href="estilos.css">
+    
+</head>
+
+<body>
+    <h3>DOM-09-Eventos</h3>
+    <hr>
+    <button onClick="sendMessage()" class="boton">Enviar Mensaje "Hola!"</button>
+
+    <script>
+        const sendMessage = () => alert("Hola!");
+    </script>
+
+    <h2 onclick="cambiarTexto(this)">Haz clic en este texto!</h2>
+    <script>
+        function cambiarTexto(id) {
+            id.innerHTML = "Texto cambiado!";
+        }
+    </script>
+</body>
+
+</html>
