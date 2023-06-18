@@ -1,0 +1,15 @@
+# opcion = input("introduzca su opcion: ").lower()
+# match opcion:
+#     case "1": horario()
+#     case "2": citaPaciente()
+#     case "3": listadoEspecialistas()
+#     case "4": buscarEspecialista()
+#     case "5": ingresoDatosEspecialista(opcion)
+#     case "6": ingresoDatosPacientes(opcion)
+#     case "7": buscarPaciente()
+#     case "8": ingresoDatosPacientes(opcion)
+#     case "9": citasDelDia()
+#     case "0": ingresoDatosEspecialista(opcion)
+#     case "q": salir()
+#     case _:
+#      print("Opcion ingresada inc") 
